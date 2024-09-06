@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        background-color: hwb(253 17% 21%);
+        /* background-image: url(./images/background-2.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover; */
+        border: 4px solid hsl(248, 100%, 25%);
+        
+       }
+       form{
+            background-color: #b2fffc;
+            text-align: center;
+            margin: 4px 4px;
+            color: black;
+        }
+        input{
+            padding: 5px;
+            background-color: hwb(263 48% 0%);
+        }
+        select{
+            background-color: hwb(263 48% 0%);
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <form  method="POST" action="convert2.php">
+        Please enter the amount:
+<input type="text" name="amount">
+<br>
+<br>
+Choose currency:
+<select class="a" name="firstcurrency">
+    <option value="select" selected>select</option>
+    <br>
+    <br>
+    <option value="Naira">Naira</option>
+    <br>
+    <br>
+    <option value="US Dollar">US Dollar</option>
+    <br>
+    <br>
+    <option value="Euro">Euro</option>
+    <br>
+    <br>
+    <option value="Pounds">Pounce</option>
+</select>
+
+<br>
+<br>
+
+
+Convert Into:
+
+<select class="b" name="secondcurrency">
+    <option value="select" selected>select</option>
+    <br>
+    <br>
+    <option value="Naira">Naira</option>
+    <br>
+    <br>
+    <option value="US Dollar">US Dollar</option>
+    <br>
+    <br>
+    <option value="Euro">Euro</option>
+    <br>
+    <br>
+    <option value="Pounds">Pounce</option>
+</select>
+<br>
+<br>
+
+<input type="submit">
+
+    </form>
+</body>
+</html>
